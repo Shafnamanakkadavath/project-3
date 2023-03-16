@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col=md-6">
+            <img src="{{movei.img.url}}" width="200" height="250">
+        </div>
+        <div class="col-md-6">
+            <h6><b><u>{{movei.name}}</u></b></h6>
+            {{movei.desc}}
+            <h3>{{movei.year}}</h3>
+ <a class="btn btn-warning" href="{% url 'moveiapp:update' movei.id %}">update<a/>
+<a class="btn btn-danger" href="{% url 'moveiapp:delete' movei.id %}">delete<a/>
+        </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+{% endblock %}

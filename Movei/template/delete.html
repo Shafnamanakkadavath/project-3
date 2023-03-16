@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<form method="post">
+    {% csrf_token %}
+    Are u Want To Delete this Movei
+    <input type="submit">
+</form>
+{% endblock %}
